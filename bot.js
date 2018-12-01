@@ -2066,113 +2066,6 @@ let welcomer = member.guild.channels.find("name","welcome");
 
 
 
-client.on('message', message => {
-    if (message.content.startsWith("=hack")) {
-        if(!message.author.id === '') return;
-      if (message.author.bot) return
-           message.delete();
-             let args = message.content.split(' ').slice(1);
- 
-                   let virusname = args.join(' ');
-                 if (virusname < 1) {
-                     return message.channel.send("```اكتب اسم الشخص الي تبي يتهكر```");
-                 }
-                 message.channel.send({embed: new Discord.RichEmbed().setTitle('Loading ' + virusname + "...").setColor(0xFF0000)}).then(function(m) {
-             setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [? ] 1%').setColor(0xFF0000)})
-             }, 1000)
-             setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [?? ] 2%').setColor(0xFF0000)})
-             }, 2000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [??? ] 3%').setColor(0xFF0000)})
-             }, 3000)
-             setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [???? ] 4%').setColor(0xFF0000)})
-             }, 4000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [???????????? ] 28%').setColor(0xFF0000)})
-             }, 5000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [????????????? ] 35%').setColor(0xFF0000)})
-             }, 6000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [??????????????? ] 78%').setColor(0xFF0000)})
-             }, 7000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [??????????????? ] 80%').setColor(0xFF0000)})
-             }, 8000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [???????????????? ] 86%').setColor(0xFF0000)})
-             }, 9000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [????????????????? ] 89%').setColor(0xFF0000)})
-             }, 10000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [?????????????????? ] 90%').setColor(0xFF0000)})
-             }, 11000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [?????????????????? ] 95%').setColor(0xFF0000)})
-             }, 12000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [?????????????????? ] 96%').setColor(0xFF0000)})
-             }, 13000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [?????????????????? ] 97%').setColor(0xFF0000)})
-             }, 14000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [??????????????????????????????????????] 98%').setColor(0xFF0000)})
-             }, 15000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [????????????????????????????????????????????????????? ] 99%').setColor(0xFF0000)})
-             }, 16000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [????????????????????????????????????????????????????] 100%').setColor(0xFF0000)})
-             }, 17000)
-             setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']:' + virusname + 'done it\'s going good 100.9%').setColor(0xFF0000)})
-             }, 18000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: hacking yeah i love it').setColor(0xFF0000)})
-             }, 19000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: uploading data' + virusname + ".key").setColor(0xFF0000)})
-             }, 22000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 5...').setColor(0xFF0000)})
-             }, 25000)
-               setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 4...').setColor(0xFF0000)})
-             }, 26000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 3...').setColor(0xFF0000)})
-             }, 27000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 2...').setColor(0xFF0000)})
-             }, 28000)
-                setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 1...').setColor(0xFF0000)})
-             }, 29000)
-             setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: ??????????????????????????????????????????????????] 99%').setColor(0xFF0000)})
-           }, 30000)
-              setTimeout(function() {
-               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: ?????????????????????????????????????????????????????]100% virus added').setColor(0xFF0000)})
-           }, 31000)
-              setTimeout(function() {
-               m.delete()
-           }, 32000)
-             setTimeout(function() {
-               message.channel.send('تم تهكيرك')
-           }, 33000)
-           });
-         }
- })
- 
- 
- 
- 
-
 
 
 
@@ -2801,50 +2694,6 @@ client.on('message', msg => {
 
 
 
-client.on('message', function(message) {
-    if(message.content.startsWith(prefix + "report")) {
-        let messageArgs = message.content.split(" ").slice(1).join(" ");
-        let messageReason = message.content.split(" ").slice(2).join(" ");
-        if(!messageReason) return message.reply("**# Specify a reason!**");
-		if (msg.guild.channels.find('name', 'warns')) {
-    let mUser = message.mentions.users.first();
-    if(!mUser) return message.channel.send("Couldn't find user.");
-    let Rembed = new Discord.RichEmbed()
-	msg.guild.channels.find('name', 'warns').send(`
-    .setTitle("`New Report!`")
-    .setThumbnail(message.author.avatarURL)
-    .addField("**# - Reported User:**",mUser,true)
-    .addField("**# - Reported User ID:**",mUser.id,true)
-    .addField("**# - Reason:**",messageReason,true)
-    .addField("**# - Channel:**",message.channel,true)
-    .addField("**# - Time:**",message.createdAt,true)
-    .setFooter("لو ان الابلاغ فيه مزح راح يتعرض صاحب الابلاغ لقوبات")
-message.channel.send(Rembed)
-message.channel.send("__Are you sure you want to send this to the Server owner??__").then(msg => {
-    msg.react("✅")
-    msg.react("❌")
-.then(() => msg.react('❌'))
-.then(() =>msg.react('✅'))
-let reaction1Filter = (reaction, user) => reaction.emoji.name === '✅' && user.id === message.author.id;
-let reaction2Filter = (reaction, user) => reaction.emoji.name === '❌' && user.id === message.author.id;
-
-let reaction1 = msg.createReactionCollector(reaction1Filter, { time: 12000 });
-let reaction2 = msg.createReactionCollector(reaction2Filter, { time: 12000 });
-reaction1.on("collect", r => {
-    message.guild.owner.send(Rembed)
-    message.reply("**# - Done! 🎇**");
-})
-reaction2.on("collect", r => {
-    message.reply("**# - Canceled!**");
-})
-})
-}
-});
-
-
-
-
-
 
 
 
@@ -3346,6 +3195,8 @@ message.guild.createChannel('cut', 'text');
 message.guild.createChannel('log', 'text');
 message.guild.createChannel('admin-chat', 'text');
 message.guild.createChannel('bot-join-leave', 'text');
+message.guild.createChannel('report', 'text');
+message.guild.createChannel('warns', 'text');
 message.guild.createChannel('▓▬▬▬ADMNS▬▬▬▓', 'voice');
 message.guild.createChannel('Owner - مالك السيرفر', 'voice');
 message.guild.createChannel('Co Owner - نائب الرئيس', 'voice');
