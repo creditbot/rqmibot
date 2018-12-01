@@ -2448,7 +2448,7 @@ if (message.content.toLowerCase().startsWith(prefix + `close`)) {
 
 
 client.on('message',async message => {
-  if(message.author.bot || message.channel.type === '=bc') return;
+  if(message.author.bot || message.channel.type === '!bc') return;
   let args = message.content.split(' ');
   if(args[0] === `!bc`) {
     if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send('- **أنت لا تملك الصلاحيات اللازمة لأستخدام هذا الأمر**');
@@ -2480,7 +2480,7 @@ client.on('message',async message => {
 	
 	client.on('message', message => {
     
-  if (message.content.startsWith ("=id")) {
+  if (message.content.startsWith ("!id")) {
 
 if(!message.channel.guild) return;
 
@@ -2669,26 +2669,6 @@ message.channel.sendFile(canvas.toBuffer())
 
 }
 
-})
-
-
-
-
-client.on('message', msg => {
-        if (msg.content.startsWith(`!warn`)) {
-           let args = msg.content.split(" ").slice(1);
-          if (!msg.mentions.members.first()) return msg.reply('منشن الشخص المحدد')
-          if (!args[1]) return msg.reply('``اكتب السبب``')
-          //غير اسم الروم او سوي روم بذا الاسم
-          if (msg.guild.channels.find('name', 'warns')) {
-            //اذا غيرت فوق غير هنا كمان
-            msg.guild.channels.find('name', 'warns').send(`
-          تم اعطائك تنبيه : ${msg.mentions.members.first()}
-          لأنك قمت بما يلي
-          ${args.join(" ").split(msg.mentions.members.first()).slice(' ')}
-          `)
-          }
-        }
 })
 
 
